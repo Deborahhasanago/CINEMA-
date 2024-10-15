@@ -1,7 +1,6 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import FetchMovie from "./FetchMovie";
+import Header from "./header/Header";
 import "./App.css";
 
 function App() {
@@ -10,6 +9,7 @@ function App() {
   return (
     <div>
       <FetchMovie />
+      <Header />
     </div>
   );
 }

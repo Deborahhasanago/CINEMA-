@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  gap: 70px;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+
+.logo-container {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.logo-image {
+  width: 35px;
+  height: 31px;
+}
+
+.logo-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-menu {
+  font-weight: 2px solid;
+  gap: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.ant-menu-item-selected {
+  color: rgb(
+    13,
+    13,
+    13
+  ) !important; /* !important overrides the ant-design css */
+  border-bottom: 2px solid red !important;
+  font-weight: bold;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none !important; /* Remove the bottom border from the menu */
+}
+
+.ant-menu-item {
+  border-bottom: none !important; /* Remove any default border */
+}
+
+.ant-menu-item::after {
+  border-bottom: none !important; /* No underline by default */
+}
+
+.ant-menu-item:hover::after,
+.ant-menu-item-selected::after {
+  border-bottom: 2px solid red !important;
+}

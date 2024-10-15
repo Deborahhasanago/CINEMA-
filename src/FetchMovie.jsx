@@ -25,19 +25,24 @@ function FetchMovie() {
   // loop (map) inside the "movieList" array and display each "movie" e.g title
   return (
     <div>
-      {movieList.map((movie) => (
-        // <h1 style={{}} key={movie.id}>{movie.title}</h1>
-        <img
-          key={movie.id}
-          style={{
-            width: "300px",
-            height: "280px",
-            marginLeft: "10px",
-            marginTop: "10px",
-          }}
-          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-        />
-      ))}
+      {movieList.map(
+        (movie) => (
+          <h1></h1>
+          // <h1 style={{}} key={movie.id}>
+          //   {movie.title}
+          // </h1>
+        )
+        // <img
+        //   key={movie.id}
+        //   style={{
+        //     width: "300px",
+        //     height: "280px",
+        //     marginLeft: "10px",
+        //     marginTop: "10px",
+        //   }}
+        //   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+        // />
+      )}
     </div>
   );
 }
